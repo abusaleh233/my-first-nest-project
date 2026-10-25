@@ -4,6 +4,5 @@ import { Injectable } from "@nestjs/common";
 
 export class UsersServices{
     getuser(){
-        return ["saleh","Ahmad","fahim"]
     }
 }
