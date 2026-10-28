@@ -7,9 +7,6 @@ export class UsersController{
     constructor(private usersServices: UsersServices){}
     @Post()
       createUser(@Body() body:any){
-        return {
-            name:body.name,
-            email:body.email
-        }
+        return this.usersServices.createUser(body)
       }
 }
